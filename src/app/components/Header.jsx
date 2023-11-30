@@ -5,7 +5,7 @@ import BilletLogo from "./BilletLogo";
 export default function Header() {
   return (
     <header>
-      <nav className="flex justify-center gap-6 py-3 fixed w-full top-0 bg-[#13141D]">
+      <nav className="flex justify-center gap-6 sm:gap-10 md:gap-16 py-3 fixed w-full top-0 bg-[#13141D]">
         <Link className="grid place-items-center hover:scale-105" href="/" prefetch={false}>
           <MusikLogo />
           Kunstnere
