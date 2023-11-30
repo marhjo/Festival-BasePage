@@ -1,5 +1,5 @@
 import CircleCard from "./components/CircleCard.jsx";
-
+import ImageAndText from "./components/ImageAndText.jsx"
 export default function Home() {
   return (
     <main className="pt-[72px]">
@@ -8,6 +8,11 @@ export default function Home() {
         <CircleCard image="ecofriendly" overskrift="Overskrift" text="Her skal der være en kort tekst som beskriver ovenstående" />
         <CircleCard image="ecofriendly" overskrift="Overskrift" text="Her skal der være en kort tekst som beskriver ovenstående" />
       </section>
+
+
+        <ImageAndText image="inclusive" overskrift="Overskrift" text="Dette skal være en mellem lang tekst som beskriver denne sektion. Den skal tiltrække læserens opmærksomhed"/>
+        <ImageAndText image="inclusive" overskrift="Overskrift" text="Dette skal være en mellem lang tekst som beskriver denne sektion. Den skal tiltrække læserens opmærksomhed" layout="reversed"/>
+
     </main>
   );
 }
