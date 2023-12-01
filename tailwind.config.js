@@ -11,5 +11,5 @@ module.exports = {
       textColor: { primary: "#1E1F2E", secondary: "#F0DCD7" },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/container-queries")],
 };

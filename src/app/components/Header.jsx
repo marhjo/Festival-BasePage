@@ -16,7 +16,7 @@ export default function Header() {
         </Link>
         <Link
           className="grid place-items-center hover:scale-105"
-          href="/"
+          href="/program"
           prefetch={false}
         >
           <ProgramLogo />

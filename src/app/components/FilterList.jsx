@@ -1,10 +1,7 @@
-import FilterButton from "./FilterButton";
-export default function FilterList() {
+export default function FilterList({ children }) {
   return (
-    <div className="flex gap-3 py-4 lg:mx-44 mb-16">
-      <FilterButton variant="primary" text="Vis alle" />
-      <FilterButton variant="secondary" text="Rock" />
-      <FilterButton variant="secondary" text="Hypertrash" />
+    <div className="flex flex-wrap gap-3 py-4 mx-3 md:mx-12 lg:mx-44 mb-16">
+      {children}
     </div>
   );
 }
