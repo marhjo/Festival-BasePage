@@ -1,7 +1,9 @@
-import ArtistList from "../components/ArtistList";
-import FilterList from "../components/FilterList";
-import FilterButton from "../components/FilterButton";
-export default function Kunstnere() {
+import BandsWrapper from "../components/BandsWrapper";
+
+export default async function Kunstnere() {
+  const res = await fetch("http://localhost:8080/bands");
+  const data = await res.json();
+
   // props: {logo name genre}
   return (
     <main className="bg-[#1E1F2E]">
@@ -12,13 +14,7 @@ export default function Kunstnere() {
         Mellem lang tekst som beskriver det brede udvalg af kunstnere og som
         skal ligge op til at læseren selv kan udforske udvalget af kategorier.
       </p>
-      <FilterList>
-        <FilterButton variant="secondary" text="Vis alle" />
-        <FilterButton variant="secondary" text="Rock" />
-        <FilterButton variant="secondary" text="Hypertrash" />
-      </FilterList>
-
-      <ArtistList />
+      <BandsWrapper data={data} />
     </main>
   );
 }
