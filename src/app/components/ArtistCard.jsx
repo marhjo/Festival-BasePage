@@ -24,7 +24,7 @@ export default function ArtistCard({ data }) {
         src={
           data.logo.startsWith("https")
             ? data.logo
-            : `http://localhost:8080/logo/${data.logo}`
+            : `http://localhost:8080/logos/${data.logo}`
         }
         alt={data.name}
       />
