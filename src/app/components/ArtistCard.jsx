@@ -6,12 +6,12 @@ export default function ArtistCard({ data }) {
     <Link
       href={`/kunstnere/${data.slug}`}
       prefetch={false}
-      className="@container relative aspect-square overflow-hidden rounded-md"
+      className="@container relative aspect-square overflow-hidden rounded-md hover:brightness-150"
     >
       {/* <Image
         src={
           data.logo.startsWith("https") ? data.logo : ""
-          // : `http://localhost:8080/${data.logo}`
+          // : `http://localhost:8080/logos/${data.logo}`
         }
         width="720"
         height="480"
@@ -20,7 +20,7 @@ export default function ArtistCard({ data }) {
         alt={data.name}
       /> */}
       <img
-        className="h-full w-full object-cover brightness-[.65]"
+        className="h-full w-full object-cover brightness-[.65] "
         src={
           data.logo.startsWith("https")
             ? data.logo
