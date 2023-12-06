@@ -11,7 +11,7 @@ export default function ArtistCard({ data }) {
       {/* <Image
         src={
           data.logo.startsWith("https") ? data.logo : ""
-          // : `http://localhost:8080/${data.logo}`
+          // : `http://localhost:8080/logos/${data.logo}`
         }
         width="720"
         height="480"
@@ -20,7 +20,7 @@ export default function ArtistCard({ data }) {
         alt={data.name}
       /> */}
       <img
-        className="h-full w-full object-cover brightness-[.65]"
+        className="h-full w-full object-cover brightness-[.65] hover:brightness-90"
         src={
           data.logo.startsWith("https")
             ? data.logo
