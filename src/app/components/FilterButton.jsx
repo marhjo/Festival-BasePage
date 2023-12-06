@@ -1,27 +1,31 @@
 "use client";
 import { useState } from "react";
-export default function FilterButton({ genre, active, setFilterProperty }) {
-  const [activeFilter, setActiveFilter] = useState(false);
+export default function FilterButton({
+  filter,
+  text,
+  active,
+  setFilterProperty,
+}) {
+  // const [activeFilter, setActiveFilter] = useState(false);
 
-  function onFilterClick(genre) {
-    setActiveFilter((old) => !old);
-    if (genre === "Vis alle") {
+  function onFilterClick(filter) {
+    // setActiveFilter((old) => !old);
+    if (filter === "Vis alle") {
       setFilterProperty("");
     } else {
-      setFilterProperty(genre);
-      console.log(activeFilter);
+      setFilterProperty(filter);
     }
   }
   return (
     <button
-      onClick={() => onFilterClick(genre)}
+      onClick={() => onFilterClick(filter)}
       className={`${
-        (activeFilter && "bg-primary text-primary") ||
-        (active && "bg-primary text-primary")
-      } 
+        // (activeFilter && "bg-primary text-primary") ||
+        active && "bg-primary text-primary"
+      } focus:bg-primary focus:text-primary
        hover:bg-primary hover:text-primary border-[#CDD6F4] border-2 px-8 rounded-2xl py-px`}
     >
-      {genre}
+      {text}
     </button>
   );
 }

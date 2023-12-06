@@ -1,9 +1,20 @@
+"use client";
 import FilterButton from "../components/FilterButton";
 import ScheduleList from "../components/ScheduleList";
 
-export default async function Program() {
-  const res = await fetch("http://localhost:8080/schedule");
-  const program = await res.json();
+import { useEffect, useState } from "react";
+
+export default function Program() {
+  const [program, setProgram] = useState({});
+  const [filterProperty, setFilterproperty] = useState("mon");
+
+  useEffect(() => {
+    fetch("http://localhost:8080/schedule")
+      .then((res) => res.json())
+      .then((data) => {
+        setProgram(data);
+      });
+  }, []);
 
   return (
     <main className="bg-[#1E1F2E]">
@@ -11,7 +22,48 @@ export default async function Program() {
         Program
       </h1>
       <div className="flex flex-wrap gap-3 py-4 mx-3 md:mx-12 lg:mx-44 mb-16">
-        <FilterButton program={program} />
+        <FilterButton
+          program={program}
+          text="Mandag"
+          filter="mon"
+          setFilterProperty={setFilterproperty}
+        />
+        <FilterButton
+          program={program}
+          text="Tirsdag"
+          filter="tue"
+          setFilterProperty={setFilterproperty}
+        />
+        <FilterButton
+          program={program}
+          text="Onsdag"
+          filter="wed"
+          setFilterProperty={setFilterproperty}
+        />
+        <FilterButton
+          program={program}
+          text="Torsdag"
+          filter="thu"
+          setFilterProperty={setFilterproperty}
+        />
+        <FilterButton
+          program={program}
+          text="Fredag"
+          filter="fri"
+          setFilterProperty={setFilterproperty}
+        />
+        <FilterButton
+          program={program}
+          text="Lørdag"
+          filter="sat"
+          setFilterProperty={setFilterproperty}
+        />
+        <FilterButton
+          program={program}
+          text="Søndag"
+          filter="sun"
+          setFilterProperty={setFilterproperty}
+        />
       </div>
 
       <div className="grid lg:grid-cols-3 mx-3 md:mx-12  lg:mx-28  mb-16">
@@ -25,13 +77,27 @@ export default async function Program() {
           Jutunheim
         </h2>
 
-        <ScheduleList program={program.Midgard} />
-        <ScheduleList
-          className="order-3"
-          program={program.Vanaheim}
-          stage="vanaheim"
-        />
-        <ScheduleList className="order-5" program={program.Jotunheim} />
+        {program.Midgard && (
+          <ScheduleList
+            program={program.Midgard}
+            filterProperty={filterProperty}
+          />
+        )}
+        {program.Vanaheim && (
+          <ScheduleList
+            className="order-3"
+            program={program.Vanaheim}
+            stage="vanaheim"
+            filterProperty={filterProperty}
+          />
+        )}
+        {program.Jotunheim && (
+          <ScheduleList
+            className="order-5"
+            program={program.Jotunheim}
+            filterProperty={filterProperty}
+          />
+        )}
       </div>
     </main>
   );
