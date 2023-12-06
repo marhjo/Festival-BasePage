@@ -19,7 +19,8 @@ export default function FilterList({ data, setFilterProperty }) {
         <FilterButton
           setFilterProperty={setFilterProperty}
           key={index}
-          genre={genre}
+          filter={genre}
+          text={genre}
           active={genre === "Vis alle" ? true : false}
         />
       ))}
