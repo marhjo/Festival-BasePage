@@ -1,5 +1,11 @@
 import BandsWrapper from "../components/BandsWrapper";
 
+export const metadata = {
+  title: "Lineup",
+  description:
+    "Udforsk det spændende lineup til Foofest 2024. Fra topnavne til nye talenter. Find den ultimative liste over bands, der vil sætte gang i festen",
+};
+
 export default async function Kunstnere() {
   const res = await fetch("http://localhost:8080/bands");
   const data = await res.json();

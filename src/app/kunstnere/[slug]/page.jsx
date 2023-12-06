@@ -12,6 +12,7 @@ export async function generateStaticParams() {
   });
   return paths;
 }
+
 export default async function Kunstner({ params }) {
   const { slug } = params;
   const res = await fetch(`http://localhost:8080/bands/${slug}`);
