@@ -3,6 +3,19 @@ import Link from "next/link";
 import CalenderLogo from "../../components/CalenderLogo";
 import LocationLogo from "../../components/LocationLogo";
 
+export async function generateMetadata({ params }) {
+  const { slug } = params;
+  const res = await fetch(`http://localhost:8080/bands/${slug}`);
+  const data = await res.json();
+
+  return {
+    title: data.name,
+    description: `${data.name} consist of the members ${data.members.map(
+      (member) => member
+    )}`,
+  };
+}
+
 export async function generateStaticParams() {
   const res = await fetch("http://localhost:8080/bands");
   const pages = await res.json();
