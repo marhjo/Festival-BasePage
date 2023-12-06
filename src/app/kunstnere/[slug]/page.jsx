@@ -10,9 +10,7 @@ export async function generateMetadata({ params }) {
 
   return {
     title: data.name,
-    description: `${data.name} consist of the members ${data.members.map(
-      (member) => member
-    )}`,
+    description: `${data.name} consist of the members ${data.members}`,
   };
 }
 
