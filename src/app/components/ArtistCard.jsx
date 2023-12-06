@@ -6,7 +6,7 @@ export default function ArtistCard({ data }) {
     <Link
       href={`/kunstnere/${data.slug}`}
       prefetch={false}
-      className="@container relative aspect-square overflow-hidden rounded-md"
+      className="@container relative aspect-square overflow-hidden rounded-md hover:brightness-150"
     >
       {/* <Image
         src={
@@ -20,7 +20,7 @@ export default function ArtistCard({ data }) {
         alt={data.name}
       /> */}
       <img
-        className="h-full w-full object-cover brightness-[.65] hover:brightness-90"
+        className="h-full w-full object-cover brightness-[.65] "
         src={
           data.logo.startsWith("https")
             ? data.logo
