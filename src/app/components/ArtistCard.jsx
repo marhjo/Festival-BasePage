@@ -19,6 +19,7 @@ export default function ArtistCard({ data }) {
         sizes="480px"
         alt={data.name}
       /> */}
+      
       <img
         className="h-full w-full object-cover brightness-[.65] "
         src={
@@ -28,8 +29,9 @@ export default function ArtistCard({ data }) {
         }
         alt={data.name}
       />
+      
       <div className="absolute bottom-0 px-3 py-8 w-full">
-        <h2 className=" @[15rem]:text-2xl text-lg">
+        <h2 className=" @[15rem]:text-2xl font-bold text-lg">
           {data.name}
         </h2>
         <p className="@[15rem]:text-lg text-sm ">{data.genre}</p>

@@ -27,7 +27,7 @@ export default function Home() {
           text="Her skal der være en kort tekst som beskriver ovenstående"
         />
       </section>
-
+<div className="hidden md:block border w-3/4 mx-auto border-accent my-5"></div>
       <ImageAndText
         image="inclusive"
         overskrift="Overskrift"
