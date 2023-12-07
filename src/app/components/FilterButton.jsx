@@ -8,11 +8,7 @@ export default function FilterButton({
 }) {
   function onFilterChange(e) {
     const filter = e.target.value;
-    if (filter === "Vis alle") {
-      setFilterProperty("");
-    } else {
-      setFilterProperty(filter);
-    }
+    setFilterProperty(filter);
   }
   function onFilterClick(e) {
     const filter = e.target.value;
