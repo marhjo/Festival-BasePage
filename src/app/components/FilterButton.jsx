@@ -56,7 +56,6 @@ export default function FilterButton({
             id={text}
             value={filter}
             onChange={onFilterClick}
-            defaultChecked={filter === "Vis alle"}
             checked={isChecked}
           />
           <label
