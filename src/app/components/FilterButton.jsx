@@ -14,7 +14,6 @@ export default function FilterButton({
       setFilterProperty(filter);
     }
   }
-  let active = true;
   function onFilterClick(e) {
     const filter = e.target.value;
     if (filter === "Vis alle") {
