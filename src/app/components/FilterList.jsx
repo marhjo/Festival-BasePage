@@ -1,7 +1,11 @@
 "use client";
 import FilterButton from "./FilterButton";
 
-export default function FilterList({ data, setFilterProperty }) {
+export default function FilterList({
+  data,
+  setFilterProperty,
+  filterProperty,
+}) {
   const uniqueGenres = [...new Set(data.map((button) => button.genre))];
   uniqueGenres.unshift("Vis alle");
 
@@ -19,6 +23,7 @@ export default function FilterList({ data, setFilterProperty }) {
         <FilterButton
           type="checkbox"
           setFilterProperty={setFilterProperty}
+          filterProperty={filterProperty}
           key={index}
           filter={genre}
           text={genre}

@@ -3,10 +3,12 @@ import FilterList from "./FilterList";
 import ArtistList from "./ArtistList";
 import { useState } from "react";
 export default function BandsWrapper({ data }) {
-  const [filterProperty, setFilterProperty] = useState("");
+  const [filterProperty, setFilterProperty] = useState(["Vis alle"]);
   let filtered = data;
-  if (filterProperty) {
-    filtered = data.filter((band) => band.genre === filterProperty);
+  if (filterProperty.includes("Vis alle")) {
+    filtered = data;
+  } else {
+    filtered = data.filter((band) => filterProperty.includes(band.genre));
   }
 
   return (
@@ -14,6 +16,7 @@ export default function BandsWrapper({ data }) {
       <FilterList
         setFilterProperty={setFilterProperty}
         data={data}
+        filterProperty={filterProperty}
       ></FilterList>
 
       <ArtistList filtered={filtered} data={data} />

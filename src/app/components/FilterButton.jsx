@@ -4,6 +4,7 @@ export default function FilterButton({
   text,
   type,
   setFilterProperty,
+  filterProperty,
 }) {
   // const [activeFilter, setActiveFilter] = useState(false);
 
@@ -16,12 +17,17 @@ export default function FilterButton({
       setFilterProperty(filter);
     }
   }
-  function onFilterClick(filter) {
+  function onFilterClick(e) {
+    const filter = e.target.value;
     // setActiveFilter((old) => !old);
-    if (filter === "Vis alle") {
+    if (filterProperty === "Vis alle") {
       setFilterProperty("");
+      setFilterProperty((old) => old.filter((i) => i == "Vis alle"));
+    } else if (e.target.checked) {
+      setFilterProperty((old) => old.concat(filter));
+      setFilterProperty((old) => old.filter((i) => i !== "Vis alle"));
     } else {
-      setFilterProperty(filter);
+      setFilterProperty((old) => old.filter((i) => i !== e.target.value));
     }
   }
   return (
@@ -46,13 +52,23 @@ export default function FilterButton({
         </>
       )}
       {type === "checkbox" && (
-        <button
-          onClick={() => onFilterClick(filter)}
-          className={` cursor-pointer whitespace-nowrap snap-start focus:bg-secondary-text focus:text-background
-          hover:bg-secondary-text hover:text-background border-secondary-text border-2 px-8 rounded-2xl py-px`}
-        >
-          {text}
-        </button>
+        <>
+          <input
+            className="hidden"
+            type="checkbox"
+            name="choose_filter"
+            id={text}
+            value={filter}
+            onChange={onFilterClick}
+            defaultChecked={filter === "Vis alle" ? true : false}
+          />
+          <label
+            className="cursor-pointer snap-start hover:bg-secondary-text hover:text-background border-secondary-text order-secondary-text border-2 px-8 rounded-2xl py-px whitespace-nowrap"
+            htmlFor={text}
+          >
+            {text}
+          </label>
+        </>
       )}
     </>
   );
