@@ -19,11 +19,11 @@ export default function FilterButton({
   return (
     <button
       onClick={() => onFilterClick(filter)}
-      className={`${
+      className={`snap-start ${
         // (activeFilter && "bg-primary text-primary") ||
         active && "bg-primary text-primary"
       } focus:bg-secondary-text focus:text-dark-blue
-       hover:bg-secondary-text hover:text-dark-blue border-secondary-text border-2 px-8 rounded-2xl py-px`}
+       hover:bg-secondary-text hover:text-dark-blue border-secondary-text border-2 px-8 rounded-2xl py-px whitespace-nowrap`}
     >
       {text}
     </button>

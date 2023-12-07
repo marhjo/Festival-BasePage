@@ -10,7 +10,6 @@ module.exports = {
       "primary-text": "#F0DCD7",
     },
     extend: {
-
       fontFamily: {
         sans: ["var(--font-sans)"],
         heading: ["var(--font-heading)"],
@@ -18,5 +17,6 @@ module.exports = {
     },
   },
 
-  plugins: [require("@tailwindcss/container-queries")],
+  plugins: [require("@tailwindcss/container-queries"),
+  require("tailwind-scrollbar-hide")],
 };

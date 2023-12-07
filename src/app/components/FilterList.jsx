@@ -14,7 +14,7 @@ export default function FilterList({ data, setFilterProperty }) {
   //   }
   // }
   return (
-    <div className="flex flex-wrap gap-3 py-4 mx-3 md:mx-12 lg:mx-44 mb-16">
+    <div className="flex snap-x overflow-x-auto  flex-nowrap  gap-3 py-4 mx-3 md:mx-12 lg:mx-44 mb-16 scrollbar-hide ">
       {uniqueGenres.map((genre, index) => (
         <FilterButton
           setFilterProperty={setFilterProperty}
@@ -27,3 +27,6 @@ export default function FilterList({ data, setFilterProperty }) {
     </div>
   );
 }
+
+
+// flex-wrap
