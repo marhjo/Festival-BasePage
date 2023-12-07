@@ -25,41 +25,48 @@ export default function Program() {
         <FilterButton
           program={program}
           text="Mandag"
+          type="radio"
           filter="mon"
           setFilterProperty={setFilterproperty}
         />
         <FilterButton
           program={program}
+          type="radio"
           text="Tirsdag"
           filter="tue"
           setFilterProperty={setFilterproperty}
         />
         <FilterButton
           program={program}
+          type="radio"
           text="Onsdag"
           filter="wed"
           setFilterProperty={setFilterproperty}
         />
         <FilterButton
           program={program}
+          type="radio"
           text="Torsdag"
           filter="thu"
           setFilterProperty={setFilterproperty}
         />
         <FilterButton
           program={program}
+          type="radio"
           text="Fredag"
           filter="fri"
           setFilterProperty={setFilterproperty}
         />
         <FilterButton
           program={program}
+          type="radio"
           text="Lørdag"
           filter="sat"
           setFilterProperty={setFilterproperty}
         />
         <FilterButton
           program={program}
+          type="radio"
           text="Søndag"
           filter="sun"
           setFilterProperty={setFilterproperty}
