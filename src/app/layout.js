@@ -16,7 +16,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`font-sans ${sans.variable} ${heading.variable}`}>
+      <body className={`font-sans ${sans.variable} ${heading.variable} bg-background text-primary-text scroll-smooth`}>
         <Header />
         {children}
         <Footer />

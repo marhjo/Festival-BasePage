@@ -29,10 +29,10 @@ export default function ArtistCard({ data }) {
         alt={data.name}
       />
       <div className="absolute bottom-0 px-3 py-8 w-full">
-        <h2 className=" @[15rem]:text-2xl text-lg text-[#F0DCD7]">
+        <h2 className=" @[15rem]:text-2xl text-lg">
           {data.name}
         </h2>
-        <p className="@[15rem]:text-lg text-sm text-[#F0DCD7]">{data.genre}</p>
+        <p className="@[15rem]:text-lg text-sm ">{data.genre}</p>
       </div>
     </Link>
   );

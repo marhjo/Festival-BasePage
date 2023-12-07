@@ -22,8 +22,8 @@ export default function FilterButton({
       className={`${
         // (activeFilter && "bg-primary text-primary") ||
         active && "bg-primary text-primary"
-      } focus:bg-primary focus:text-primary
-       hover:bg-primary hover:text-primary border-[#CDD6F4] border-2 px-8 rounded-2xl py-px`}
+      } focus:bg-secondary-text focus:text-dark-blue
+       hover:bg-secondary-text hover:text-dark-blue border-secondary-text border-2 px-8 rounded-2xl py-px`}
     >
       {text}
     </button>

@@ -2,12 +2,3 @@
 @tailwind components;
 @tailwind utilities;
 
-
-body {
-  background-color: #1e1f2e;
-  color: #f0dcd7;
-}
-
-h1 {
-  font-family: var(--font-display);
-}

@@ -2,9 +2,14 @@
 module.exports = {
   content: ["./src/pages/**/*.{js,ts,jsx,tsx,mdx}", "./src/components/**/*.{js,ts,jsx,tsx,mdx}", "./src/app/**/*.{js,ts,jsx,tsx,mdx}"],
   theme: {
+    colors: {
+      background: "#1E1F2E",
+      "dark-blue": "#13141D",
+      accent: "#EAAC86",
+      "secondary-text": "#CDD6F4",
+      "primary-text": "#F0DCD7",
+    },
     extend: {
-      backgroundColor: { primary: "#CDD6F4", secondary: "transparent" },
-      textColor: { primary: "#1E1F2E", secondary: "#F0DCD7" },
 
       fontFamily: {
         sans: ["var(--font-sans)"],

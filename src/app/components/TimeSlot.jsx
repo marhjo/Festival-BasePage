@@ -4,7 +4,7 @@ export default function TimeSlot({ program }) {
       <h3 className="text-xl sm:text-2xl lg:text-xl xl:text-2xl text-secondary">
         {program.act}
       </h3>
-      <p className="text-xl sm:text-2xl lg:text-xl xl:text-2xl text-[#CDD6F4]">
+      <p className="text-xl sm:text-2xl lg:text-xl xl:text-2xl text-secondary-text">
         <span>{program.start}</span>-<span>{program.end}</span>
       </p>
     </li>

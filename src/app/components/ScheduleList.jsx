@@ -8,7 +8,7 @@ export default function ScheduleList({
   return (
     <ol
       className={` ${className} ${
-        stage === "vanaheim" && "lg:border-x-2 border-[#EAAC86]"
+        stage === "vanaheim" && "lg:border-x-2 border-accent"
       }  list-none pt-4 mx-auto sm:px-10 lg:px-9  w-11/12 sm:w-8/12 lg:w-full `}
     >
       {program[filterProperty].map(
