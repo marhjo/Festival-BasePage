@@ -17,6 +17,7 @@ export default function FilterList({ data, setFilterProperty }) {
     <div className="flex flex-wrap gap-3 py-4 mx-3 md:mx-12 lg:mx-44 mb-16">
       {uniqueGenres.map((genre, index) => (
         <FilterButton
+          type="checkbox"
           setFilterProperty={setFilterProperty}
           key={index}
           filter={genre}
