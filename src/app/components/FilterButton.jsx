@@ -18,7 +18,7 @@ export default function FilterButton({
   function onFilterClick(e) {
     const filter = e.target.value;
     if (filter === "Vis alle") {
-      setFilterProperty((old) => (old = []));
+      setFilterProperty([]);
       setFilterProperty((old) => old.concat("Vis alle"));
     } else if (e.target.checked) {
       setFilterProperty((old) => old.filter((i) => i !== "Vis alle"));
