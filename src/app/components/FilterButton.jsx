@@ -4,28 +4,25 @@ export default function FilterButton({
   text,
   type,
   setFilterProperty,
-  filterProperty,
+  isChecked,
 }) {
-  // const [activeFilter, setActiveFilter] = useState(false);
-
   function onFilterChange(e) {
     const filter = e.target.value;
-    // setActiveFilter((old) => !old);
     if (filter === "Vis alle") {
       setFilterProperty("");
     } else {
       setFilterProperty(filter);
     }
   }
+  let active = true;
   function onFilterClick(e) {
     const filter = e.target.value;
-    // setActiveFilter((old) => !old);
-    if (filterProperty === "Vis alle") {
-      setFilterProperty("");
-      setFilterProperty((old) => old.filter((i) => i == "Vis alle"));
+    if (filter === "Vis alle") {
+      setFilterProperty((old) => (old = []));
+      setFilterProperty((old) => old.concat("Vis alle"));
     } else if (e.target.checked) {
-      setFilterProperty((old) => old.concat(filter));
       setFilterProperty((old) => old.filter((i) => i !== "Vis alle"));
+      setFilterProperty((old) => old.concat(filter));
     } else {
       setFilterProperty((old) => old.filter((i) => i !== e.target.value));
     }
@@ -60,7 +57,8 @@ export default function FilterButton({
             id={text}
             value={filter}
             onChange={onFilterClick}
-            defaultChecked={filter === "Vis alle" ? true : false}
+            defaultChecked={filter === "Vis alle" && true}
+            checked={isChecked}
           />
           <label
             className="cursor-pointer snap-start hover:bg-secondary-text hover:text-background border-secondary-text order-secondary-text border-2 px-8 rounded-2xl py-px whitespace-nowrap"
