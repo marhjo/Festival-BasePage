@@ -37,7 +37,7 @@ export default function FilterButton({
             id={text}
             value={filter}
             onChange={onFilterChange}
-            defaultChecked={filter === "mon" && true}
+            defaultChecked={filter === "mon"}
           />
           <label
             className=" cursor-pointer snap-start hover:bg-secondary-text hover:text-background border-secondary-text border-2 px-8 rounded-2xl py-px"
@@ -56,7 +56,7 @@ export default function FilterButton({
             id={text}
             value={filter}
             onChange={onFilterClick}
-            defaultChecked={filter === "Vis alle" && true}
+            defaultChecked={filter === "Vis alle"}
             checked={isChecked}
           />
           <label
