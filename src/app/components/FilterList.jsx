@@ -28,6 +28,3 @@ export default function FilterList({ data, setFilterProperty }) {
     </div>
   );
 }
-
-
-// flex-wrap
