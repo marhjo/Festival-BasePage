@@ -38,7 +38,7 @@ export default function FilterButton({
             defaultChecked={filter === "mon" && true}
           />
           <label
-            className=" cursor-pointer snap-start hover:bg-primary hover:text-primary border-[#CDD6F4] border-2 px-8 rounded-2xl py-px"
+            className=" cursor-pointer snap-start hover:bg-secondary-text hover:text-background border-secondary-text border-2 px-8 rounded-2xl py-px"
             htmlFor={text}
           >
             {text}
@@ -48,8 +48,8 @@ export default function FilterButton({
       {type === "checkbox" && (
         <button
           onClick={() => onFilterClick(filter)}
-          className={` cursor-pointer whitespace-nowrap snap-start focus:bg-primary focus:text-primary
-       hover:bg-primary hover:text-primary border-[#CDD6F4] border-2 px-8 rounded-2xl py-px`}
+          className={` cursor-pointer whitespace-nowrap snap-start focus:bg-secondary-text focus:text-background
+          hover:bg-secondary-text hover:text-background border-secondary-text border-2 px-8 rounded-2xl py-px`}
         >
           {text}
         </button>
