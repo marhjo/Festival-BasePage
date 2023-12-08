@@ -49,16 +49,16 @@ export default function FilterButton({
             className="hidden"
             type="checkbox"
             name="choose_filter"
-            id={text}
+            id={filter}
             value={filter}
             onChange={onFilterClick}
             checked={isChecked}
           />
           <label
             className="cursor-pointer snap-start hover:bg-secondary-text hover:text-background border-secondary-text order-secondary-text border-2 px-8 rounded-2xl py-px whitespace-nowrap"
-            htmlFor={text}
+            htmlFor={filter}
           >
-            {text}
+            {filter}
           </label>
         </>
       )}
