@@ -38,13 +38,16 @@ export default async function Kunstner({ params }) {
       </Link>
 
       <div className="bandsection md:flex md:justify-center md:px-10 mx-auto py-5 md:py-10">
-        <img
-          className="aspect-square object-cover w-full md:w-4/12"
+        <Image
           src={
             data.logo.startsWith("https")
               ? data.logo
               : `http://localhost:8080/logos/${data.logo}`
           }
+          width="720"
+          height="480"
+          className="aspect-square object-cover w-full md:w-4/12"
+          sizes="500px"
           alt={data.name}
         />
 
