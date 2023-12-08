@@ -2,9 +2,9 @@ import CircleCard from "./components/CircleCard.jsx";
 import ImageAndText from "./components/ImageAndText.jsx";
 
 export const metadata = {
-  title: "Foofest",
+  title: "FooFest",
   description:
-    "Velkommen til årets musikfestival: Foofest. Find informationer om programmet, kunstnere, og deltag i fællesskabet.",
+    "Velkommen til årets musikfestival: Foo Festival. Find informationer om programmet, kunstnere, og deltag i fællesskabet.",
 };
 
 export default function Home() {
@@ -27,7 +27,7 @@ export default function Home() {
           text="Her skal der være en kort tekst som beskriver ovenstående"
         />
       </section>
-<div className="hidden md:block border w-3/4 mx-auto border-accent my-5"></div>
+      <div className="hidden md:block border w-3/4 mx-auto border-accent my-5"></div>
       <ImageAndText
         image="inclusive"
         overskrift="Overskrift"
