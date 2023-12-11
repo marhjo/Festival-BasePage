@@ -5,7 +5,7 @@ import LocationLogo from "../../components/LocationLogo";
 
 export async function generateMetadata({ params }) {
   const { slug } = params;
-  const res = await fetch(`http://localhost:8080/bands/${slug}`);
+  const res = await fetch(`https://fe-fi-foofest.glitch.me/bands/${slug}`);
   const data = await res.json();
 
   return {
@@ -17,7 +17,7 @@ export async function generateMetadata({ params }) {
 }
 
 export async function generateStaticParams() {
-  const res = await fetch("http://localhost:8080/bands");
+  const res = await fetch("https://fe-fi-foofest.glitch.me/bands");
   const pages = await res.json();
 
   const paths = pages.map((page) => {
@@ -28,7 +28,7 @@ export async function generateStaticParams() {
 
 export default async function Kunstner({ params }) {
   const { slug } = params;
-  const res = await fetch(`http://localhost:8080/bands/${slug}`);
+  const res = await fetch(`https://fe-fi-foofest.glitch.me/bands/${slug}`);
   const data = await res.json();
 
   return (
@@ -42,7 +42,7 @@ export default async function Kunstner({ params }) {
           src={
             data.logo.startsWith("https")
               ? data.logo
-              : `http://localhost:8080/logos/${data.logo}`
+              : `https://fe-fi-foofest.glitch.me/logos/${data.logo}`
           }
           width="720"
           height="480"

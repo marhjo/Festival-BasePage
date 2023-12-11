@@ -8,6 +8,11 @@ const nextConfig = {
         port: "",
       },
       {
+        protocol: "https",
+        hostname: "fe-fi-foofest.glitch.me",
+        port: "",
+      },
+      {
         protocol: "http",
         hostname: "localhost",
         port: "8080",

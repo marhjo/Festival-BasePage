@@ -7,7 +7,7 @@ export const metadata = {
 };
 
 export default async function Kunstnere() {
-  const res = await fetch("http://localhost:8080/bands");
+  const res = await fetch("https://fe-fi-foofest.glitch.me/bands");
   const data = await res.json();
 
   // props: {logo name genre}

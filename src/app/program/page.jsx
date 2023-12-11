@@ -9,7 +9,7 @@ export default function Program() {
   const [filterProperty, setFilterproperty] = useState("mon");
 
   useEffect(() => {
-    fetch("http://localhost:8080/schedule")
+    fetch("https://fe-fi-foofest.glitch.me/schedule")
       .then((res) => res.json())
       .then((data) => {
         setProgram(data);
