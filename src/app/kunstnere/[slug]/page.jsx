@@ -44,10 +44,9 @@ export default async function Kunstner({ params }) {
               ? data.logo
               : `https://fe-fi-foofest.glitch.me/logos/${data.logo}`
           }
-          width="720"
-          height="480"
+          width="200"
+          height="200"
           className="aspect-square object-cover w-full md:w-4/12"
-          sizes="500px"
           alt={data.name}
         />
 
