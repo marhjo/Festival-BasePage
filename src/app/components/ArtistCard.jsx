@@ -8,19 +8,20 @@ export default function ArtistCard({ data }) {
       prefetch={false}
       className="@container relative aspect-square overflow-hidden rounded-md hover:brightness-150"
     >
-      {/* <Image
+      <Image
         src={
-          data.logo.startsWith("https") ? data.logo : ""
-          // : `http://localhost:8080/logos/${data.logo}`
+          data.logo.startsWith("https")
+            ? data.logo
+            : `http://localhost:8080/logos/${data.logo}`
         }
         width="720"
         height="480"
         className="h-full w-full object-cover brightness-[.65]"
-        sizes="480px"
+        sizes="300px"
         alt={data.name}
-      /> */}
-      
-      <img
+      />
+
+      {/* <img
         className="h-full w-full object-cover brightness-[.65] "
         src={
           data.logo.startsWith("https")
@@ -28,12 +29,10 @@ export default function ArtistCard({ data }) {
             : `http://localhost:8080/logos/${data.logo}`
         }
         alt={data.name}
-      />
-      
+      /> */}
+
       <div className="absolute bottom-0 px-3 py-8 w-full">
-        <h2 className=" @[15rem]:text-2xl font-bold text-lg">
-          {data.name}
-        </h2>
+        <h2 className=" @[15rem]:text-2xl font-bold text-lg">{data.name}</h2>
         <p className="@[15rem]:text-lg text-sm ">{data.genre}</p>
       </div>
     </Link>

@@ -18,7 +18,6 @@ export default function FilterList({
           filterProperty={filterProperty}
           key={index}
           filter={genre}
-          text={genre}
           isChecked={filterProperty.includes(genre)}
         />
       ))}

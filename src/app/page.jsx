@@ -3,8 +3,9 @@ import ImageAndText from "./components/ImageAndText.jsx";
 import HeroBanner from "./components/HeroBanner.jsx";
 
 export const metadata = {
-  title: "Foofest",
-  description: "Velkommen til årets musikfestival: Foofest. Find informationer om programmet, kunstnere, og deltag i fællesskabet.",
+  title: "FooFest",
+  description:
+    "Velkommen til årets musikfestival: Foo Festival. Find informationer om programmet, kunstnere, og deltag i fællesskabet.",
 };
 
 export default function Home() {
@@ -17,8 +18,17 @@ export default function Home() {
         <CircleCard image="ecofriendly" overskrift="Overskrift" text="Her skal der være en kort tekst som beskriver ovenstående" />
       </section>
       <div className="hidden md:block border w-3/4 mx-auto border-accent my-5"></div>
-      <ImageAndText image="inclusive" overskrift="Overskrift" text="Dette skal være en mellem lang tekst som beskriver denne sektion. Den skal tiltrække læserens opmærksomhed" />
-      <ImageAndText image="inclusive" overskrift="Overskrift" text="Dette skal være en mellem lang tekst som beskriver denne sektion. Den skal tiltrække læserens opmærksomhed" layout="reversed" />
+      <ImageAndText
+        image="inclusive"
+        overskrift="Overskrift"
+        text="Dette skal være en mellem lang tekst som beskriver denne sektion. Den skal tiltrække læserens opmærksomhed"
+      />
+      <ImageAndText
+        image="inclusive"
+        overskrift="Overskrift"
+        text="Dette skal være en mellem lang tekst som beskriver denne sektion. Den skal tiltrække læserens opmærksomhed"
+        layout="reversed"
+      />
     </main>
   );
 }

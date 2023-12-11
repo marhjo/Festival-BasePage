@@ -10,7 +10,9 @@ export async function generateMetadata({ params }) {
 
   return {
     title: data.name,
-    description: `${data.name} consist of the members ${data.members}`,
+    description: `${data.name} consist of the members ${data.members.map(
+      (member) => member
+    )}`,
   };
 }
 
@@ -29,9 +31,6 @@ export default async function Kunstner({ params }) {
   const res = await fetch(`http://localhost:8080/bands/${slug}`);
   const data = await res.json();
 
-  // const response = await fetch(`http://localhost:8080/schedule`);
-  // const schedule = await response.json();
-
   return (
     <main className="pt-[72px]">
       <Link className="underline px-3" href="/kunstnere" prefetch={false}>
@@ -39,18 +38,21 @@ export default async function Kunstner({ params }) {
       </Link>
 
       <div className="bandsection md:flex md:justify-center md:px-10 mx-auto py-5 md:py-10">
-        <img
-          className="aspect-square object-cover w-full md:w-4/12"
+        <Image
           src={
             data.logo.startsWith("https")
               ? data.logo
               : `http://localhost:8080/logos/${data.logo}`
           }
+          width="720"
+          height="480"
+          className="aspect-square object-cover w-full md:w-4/12"
+          sizes="500px"
           alt={data.name}
         />
 
         <div className="bandinfo px-5 pt-3 md:pt-0 pb-5">
-          <h1 className=" font-heading text-3xl font-bold">{data.name}</h1>
+          <h1 className="text-3xl font-bold">{data.name}</h1>
           <h2 className="text-xl font-semibold mb-5">{data.genre}</h2>
           <div className="flex gap-10 mb-6">
             <p className="flex gap-2">
