@@ -53,7 +53,7 @@ export default async function Kunstner({ params }) {
         <div className="bandinfo px-5 pt-3 md:pt-0 pb-5">
           <h1 className="text-3xl font-bold">{data.name}</h1>
           <h2 className="text-xl font-semibold mb-5">{data.genre}</h2>
-          <div className="flex gap-10 mb-6">
+          {/* <div className="flex gap-10 mb-6">
             <p className="flex gap-2">
               <span>
                 <CalenderLogo />
@@ -66,7 +66,7 @@ export default async function Kunstner({ params }) {
               </span>
               Midgard
             </p>
-          </div>
+          </div> */}
           <div className="bandmedlemmer flex flex-wrap gap-x-10 mb-10">
             {data.members.map((member) => (
               <p key={data.name}>{member}</p>
