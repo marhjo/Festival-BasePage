@@ -8,18 +8,18 @@ export default function Footer() {
         <h2 className="font-bold text-accent">Foo Festival</h2>
         <nav className="flex flex-col">
           <Link className="hover:underline" href="/" prefetch={false}>
-            Om os
+            About us
           </Link>
           <Link className="hover:underline" href="/" prefetch={false}>
-            Samarbejdspartnere
+            Partners
           </Link>
           <Link className="hover:underline"  href="/" prefetch={false}>
-            Bliv frivillig
+            Volunteer
           </Link>
         </nav>
       </div>
       <div className="flex flex-col gap-2">
-        <h2 className="font-bold text-accent">Kontakt os</h2>
+        <h2 className="font-bold text-accent">Contact us</h2>
         <div>
             <p>Tel: 43 23 65 45</p>
             <p className="mb-4">Mail: kontakt@foofestival.dk</p>
@@ -28,7 +28,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="flex flex-col gap-2 order-first sm:order-3">
-        <h2 className="font-bold text-accent hidden sm:block">Følg os</h2>
+        <h2 className="font-bold text-accent hidden sm:block">Follow us</h2>
         <div className="flex gap-5 justify-center">
             <FacebookLogo/>
             <InstagramLogo/>

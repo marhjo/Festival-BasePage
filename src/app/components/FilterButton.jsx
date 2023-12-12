@@ -12,11 +12,11 @@ export default function FilterButton({
   }
   function onFilterClick(e) {
     const filter = e.target.value;
-    if (filter === "Vis alle") {
+    if (filter === "Show all") {
       setFilterProperty([]);
-      setFilterProperty((old) => old.concat("Vis alle"));
+      setFilterProperty((old) => old.concat("Show all"));
     } else if (e.target.checked) {
-      setFilterProperty((old) => old.filter((i) => i !== "Vis alle"));
+      setFilterProperty((old) => old.filter((i) => i !== "Show all"));
       setFilterProperty((old) => old.concat(filter));
     } else {
       setFilterProperty((old) => old.filter((i) => i !== e.target.value));

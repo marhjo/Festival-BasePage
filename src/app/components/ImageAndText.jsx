@@ -10,7 +10,7 @@ export default function ImageAndText(props) {
     >
       <Image
         className="w-full md:max-w-screen-sm  object-cover aspect-[5/3]"
-        src={props.image}
+        src={"/" + props.image}
         alt={props.image}
         width={300}
         height={100}
