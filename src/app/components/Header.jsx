@@ -43,7 +43,7 @@ export default function Header() {
             prefetch={false}
           >
             <BilletLogo />
-            Køb Biletter
+            Køb Billetter
           </Link>
         </div>
         <div className="hidden sm:block w-20"></div>
