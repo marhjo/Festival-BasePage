@@ -3,7 +3,7 @@ import BandsWrapper from "../components/BandsWrapper";
 export const metadata = {
   title: "Kunstnere",
   description:
-    "Udforsk det spændende lineup til Foofest 2024. Fra topnavne til nye talenter. Find den ultimative liste over bands, der vil sætte gang i festen",
+    "Udforsk det spændende lineup til Foo Festival 2024. Fra topnavne til nye talenter. Find den ultimative liste over bands, der vil sætte gang i festen",
 };
 
 export default async function Kunstnere() {
