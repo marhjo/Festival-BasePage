@@ -27,7 +27,7 @@ export default function FilterButton({
       {type === "radio" && (
         <>
           <input
-            className="hidden"
+            className="hidden "
             type="radio"
             name="choose-filter"
             id={text}
@@ -36,7 +36,7 @@ export default function FilterButton({
             defaultChecked={filter === "mon"}
           />
           <label
-            className=" cursor-pointer snap-start hover:bg-secondary-text hover:text-background border-secondary-text border-2 px-8 rounded-2xl py-px"
+            className=" cursor-pointer snap-start hover:bg-secondary-text hover:text-background border-secondary-text border-2 rounded-2xl py-px px-8 sm:flex-1 text-center"
             htmlFor={text}
           >
             {text}

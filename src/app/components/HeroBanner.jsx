@@ -13,7 +13,10 @@ export default function HeroBanner() {
         <img className="w-3/4" src="./foo-festival-logo.svg" alt="" />
         <p className="text-3xl mt-10">15 January - 21 January</p>
         <p className="text-3xl mb-4">Copenhagen</p>
-        <p className="max-w-prose text-xl hidden sm:block mb-3"> We gathered 120 artist from all over the world and bring them to you in a week full of togetherness and music.
+        <p className="max-w-prose text-xl hidden sm:block mb-3">
+          {" "}
+          We gathered 120 artist from all over the world and bring them to you
+          in a week full of togetherness and music.
         </p>
       </div>
     </section>
