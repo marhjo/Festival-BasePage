@@ -22,7 +22,7 @@ export default function Home() {
         overskrift="Upcoming and major artists"
         text="We understand that musical taste is diverse, so we've curated an incredible lineup spanning everything from pop and rock to hypertrash. Collaborating with you, we've crafted the ultimate roster, featuring both emerging talents and iconic names like Led Zeppelin, Pink Floyd, and many more." link="kunstnere" linktekst="Explore the line-up"
       />
-      <ImageAndText image="program.webp" overskrift="A one week party" text="This year, we present a diverse program over 7 days featuring three unique stages, each with its own theme, delivering an exciting festival experience for everyone. TEKST" layout="reversed" link="program" linktekst="Explore the program"/>
+      <ImageAndText image="program.webp" overskrift="A one week party" text="This year, we present a diverse program over 7 days featuring three unique stages, each with its own theme, delivering an exciting festival experience for everyone." layout="reversed" link="program" linktekst="Explore the program"/>
     </main>
   );
 }
