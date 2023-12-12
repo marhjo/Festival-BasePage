@@ -10,7 +10,7 @@ export default function FilterList({
   uniqueGenres.unshift("Vis alle");
 
   return (
-    <div className="flex snap-x overflow-x-auto  flex-nowrap  gap-3 py-4 mx-3 md:mx-12 lg:mx-44 mb-16 scrollbar-hide ">
+    <div className="flex snap-x overflow-x-auto  flex-nowrap  gap-3 py-4 mx-3 md:mx-12 lg:mx-32 mb-16 ">
       {uniqueGenres.map((genre, index) => (
         <FilterButton
           type="checkbox"

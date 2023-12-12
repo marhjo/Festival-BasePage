@@ -16,16 +16,16 @@ export default function ImageAndText(props) {
         height={100}
       />
       <div className="py-5 md:py-0 px-5">
-        <h2 className="mb-3 text-4xl md:text-6xl font-semibold">
+        <h2 className="mb-3 text-4xl md:text-5xl font-semibold">
           {props.overskrift}
         </h2>
         <p className="mb-5 md:text-lg max-w-prose">{props.text}</p>
         <Link
           className="underline cursor-pointer md:text-lg"
-          href="/"
+          href={"/" + props.link}
           prefetch={false}
         >
-          Læs mere her
+          {props.linktekst}
         </Link>
       </div>
     </article>

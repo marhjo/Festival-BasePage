@@ -7,13 +7,13 @@ export default function Footer() {
       <div className="flex flex-col gap-2">
         <h2 className="font-bold text-accent">Foo Festival</h2>
         <nav className="flex flex-col">
-          <Link href="/" prefetch={false}>
+          <Link className="hover:underline" href="/" prefetch={false}>
             Om os
           </Link>
-          <Link href="/" prefetch={false}>
+          <Link className="hover:underline" href="/" prefetch={false}>
             Samarbejdspartnere
           </Link>
-          <Link href="/" prefetch={false}>
+          <Link className="hover:underline"  href="/" prefetch={false}>
             Bliv frivillig
           </Link>
         </nav>
