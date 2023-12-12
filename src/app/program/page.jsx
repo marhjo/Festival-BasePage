@@ -22,8 +22,8 @@ export default function Program() {
         Program
       </h1>
       <p className="text-xl text-secondary max-w-prose mx-3 md:mx-12 lg:mx-32 mb-8">
-        Below, you'll find the complete schedule distributed across our three
-        stages. You can filter based on the days you'd like to attend concerts.
+        Below, you will find the complete schedule distributed across our three
+        stages. You can filter based on the days you would like to attend concerts.
         Please note that the schedule may be subject to changes.
       </p>
       <div className="flex snap-x overflow-x-auto  flex-nowrap  gap-3 py-4 mx-3 md:mx-12 lg:mx-32 mb-16">
