@@ -3,7 +3,7 @@ export default function CircleCard(props) {
   return (
     <article className="flex flex-col gap-3 max-w-sm place-items-center text-center mx-auto sm:max-w-xs ">
       <Image
-        src={props.image}
+        src={"/" + props.image + ".jpg"}
         className=" w-36 md:w-44 rounded-full object-cover aspect-square"
         width={100}
         height={100}
