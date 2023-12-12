@@ -5,7 +5,7 @@ import HeroBanner from "./components/HeroBanner.jsx";
 export const metadata = {
   title: "FooFest",
   description:
-    "Velkommen til årets musikfestival: Foo Festival. Find informationer om programmet, kunstnere, og deltag i fællesskabet.",
+    "Welcome to this year's music festival: Foo Festival. Find information about the program, artists, and join the community.",
 };
 
 export default function Home() {

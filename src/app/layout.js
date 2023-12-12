@@ -15,7 +15,7 @@ const heading = localFont({
 export const metadata = {
   title: "Program",
   description:
-    "Find alle detaljer om Foo Festival 2024-programmet. Oplev storslåede optrædener og musikalske højdepunkter ",
+    "Find all the details about the program for Foo Festival 2024. Experience exciting performances and musical highlights ",
 };
 
 export default function RootLayout({ children }) {
