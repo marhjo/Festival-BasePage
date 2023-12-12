@@ -20,9 +20,9 @@ export default function Home() {
       <ImageAndText
         image="inclusive"
         overskrift="Upcoming og store artister"
-        text="Vi ved at musiksmag er en bred ting, så derfor har vi fundet de fedeste kunstnere indefor alt lige fra pop til rock og til hypertrash. Sammen med jer har vi sammensat det ultimative line-up hvor I kan finde nye artister såvel som store navne som Led Zeppelin, Pink floyd og mange flere."
+        text="Vi ved at musiksmag er en bred ting, så derfor har vi fundet de fedeste kunstnere indefor alt lige fra pop til rock og til hypertrash. Sammen med jer har vi sammensat det ultimative line-up hvor I kan finde nye artister såvel som store navne som Led Zeppelin, Pink floyd og mange flere." link="kunstnere" linktekst="Udforsk lineuppet"
       />
-      <ImageAndText image="inclusive" overskrift="En uges fest" text="I år har vi valgt at tilbyde hele 3 forskellige scener med hver deres tema. SKRIV MERE TEKST" layout="reversed" />
+      <ImageAndText image="inclusive" overskrift="En uges fest" text="I år har vi valgt at tilbyde hele 3 forskellige scener med hver deres tema. SKRIV MERE TEKST" layout="reversed" link="program" linktekst="Udforsk programmet"/>
     </main>
   );
 }
