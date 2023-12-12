@@ -33,8 +33,8 @@ export default async function Kunstner({ params }) {
 
   return (
     <main className="pt-[72px]">
-      <Link className="underline px-3" href="/kunstnere" prefetch={false}>
-        Tilbage til kunstnere
+      <Link className="underline px-3 py-7" href="/kunstnere" prefetch={false}>
+        Back to artists
       </Link>
 
       <div className="bandsection md:flex md:justify-center md:px-10 mx-auto py-5 md:py-10">

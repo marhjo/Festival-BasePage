@@ -19,7 +19,7 @@ export default function Header() {
         <div className="flex gap-5 sm:gap-11">
           <Link className="grid place-items-center hover:scale-105 duration-150" href="/kunstnere" prefetch={false}>
             <MusikLogo />
-            Kunstnere
+            Artists
           </Link>
           <Link className="grid place-items-center hover:scale-105 duration-150" href="/program" prefetch={false}>
             <ProgramLogo />
@@ -27,7 +27,7 @@ export default function Header() {
           </Link>
           <Link className="grid place-items-center hover:scale-105 duration-150" href="https://astro-solid-foofighter.vercel.app/" prefetch={false}>
             <BilletLogo />
-            Køb Biletter
+            Buy Tickets
           </Link>
         </div>
         <div className="hidden sm:block w-20"></div>

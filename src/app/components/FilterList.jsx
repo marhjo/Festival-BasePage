@@ -7,7 +7,7 @@ export default function FilterList({
   filterProperty,
 }) {
   const uniqueGenres = [...new Set(data.map((button) => button.genre))];
-  uniqueGenres.unshift("Vis alle");
+  uniqueGenres.unshift("Show all");
 
   return (
     <div className="flex snap-x overflow-x-auto  flex-nowrap  gap-3 py-4 mx-3 md:mx-12 lg:mx-32 mb-16 ">

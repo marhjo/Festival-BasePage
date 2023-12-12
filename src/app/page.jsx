@@ -12,17 +12,17 @@ export default function Home() {
     <main className="pt-[72px]">
       <HeroBanner />
       <section className="py-10 px-5 flex flex-col gap-16 sm:flex-row sm:gap-10 md:px-20">
-        <CircleCard image="ecofriendly" overskrift="Vi er bæredygtige" text="Vi fokuserer på at tage bedre valg som hverken går på kompromis med din oplevelse eller planeten" />
-        <CircleCard image="ecofriendly" overskrift="Vi er inkluderende" text="Festivallen skal være et sted for alle. MANGLER EN SÆTNING " />
-        <CircleCard image="ecofriendly" overskrift="Vi samarbejder med lokale" text="Musikken er fra hele verden men alt hvad der kan købes på festivallen er fra lokale virksomheder." />
+        <CircleCard image="ecofriendly" overskrift="We are ecofriendly" text="We are focused to take better choices with our festival that doesn't compromise your experience or our planet." />
+        <CircleCard image="ecofriendly" overskrift="We are including" text="The festival embraces diversity, creating a welcoming space where everyone is invited to join in the celebration." />
+        <CircleCard image="local" overskrift="We work with locales" text="The music comes from all around the world, but everything available for purchase at the festival is sourced from local businesses." />
       </section>
       <div className="hidden md:block border w-3/4 mx-auto border-accent my-5"></div>
       <ImageAndText
-        image="inclusive"
-        overskrift="Upcoming og store artister"
-        text="Vi ved at musiksmag er en bred ting, så derfor har vi fundet de fedeste kunstnere indefor alt lige fra pop til rock og til hypertrash. Sammen med jer har vi sammensat det ultimative line-up hvor I kan finde nye artister såvel som store navne som Led Zeppelin, Pink floyd og mange flere." link="kunstnere" linktekst="Udforsk lineuppet"
+        image="concert.webp"
+        overskrift="Upcoming and major artists"
+        text="We understand that musical taste is diverse, so we've curated an incredible lineup spanning everything from pop and rock to hypertrash. Collaborating with you, we've crafted the ultimate roster, featuring both emerging talents and iconic names like Led Zeppelin, Pink Floyd, and many more." link="kunstnere" linktekst="Explore the line-up"
       />
-      <ImageAndText image="inclusive" overskrift="En uges fest" text="I år har vi valgt at tilbyde hele 3 forskellige scener med hver deres tema. SKRIV MERE TEKST" layout="reversed" link="program" linktekst="Udforsk programmet"/>
+      <ImageAndText image="program.webp" overskrift="A one week party" text="This year, we present a diverse program over 7 days featuring three unique stages, each with its own theme, delivering an exciting festival experience for everyone. TEKST" layout="reversed" link="program" linktekst="Explore the program"/>
     </main>
   );
 }
