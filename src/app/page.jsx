@@ -13,7 +13,7 @@ export default function Home() {
       <HeroBanner />
       <section className="py-10 px-5 flex flex-col gap-16 sm:flex-row sm:gap-10 md:px-20">
         <CircleCard image="ecofriendly" overskrift="We are ecofriendly" text="We are focused to take better choices with our festival that doesn't compromise your experience or our planet." />
-        <CircleCard image="ecofriendly" overskrift="We are including" text="The festival embraces diversity, creating a welcoming space where everyone is invited to join in the celebration." />
+        <CircleCard image="inclusive" overskrift="We are including" text="The festival embraces diversity, creating a welcoming space where everyone is invited to join in the celebration." />
         <CircleCard image="local" overskrift="We work with locales" text="The music comes from all around the world, but everything available for purchase at the festival is sourced from local businesses." />
       </section>
       <div className="hidden md:block border w-3/4 mx-auto border-accent my-5"></div>
