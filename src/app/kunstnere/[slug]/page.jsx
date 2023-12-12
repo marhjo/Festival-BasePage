@@ -72,6 +72,7 @@ export default async function Kunstner({ params }) {
               <p key={data.name}>{member}</p>
             ))}
           </div>
+          <div className=" border w-2/4 mx-auto border-accent my-7"></div>
           <p className="font-thin max-w-prose">{data.bio}</p>
         </div>
       </div>
