@@ -16,14 +16,17 @@ export default function HeroBanner() {
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
-      }}>
+      }}
+    >
       <div className=" bg-background bg-opacity-70 h-full pl-16 pr-5 pt-10  ">
-          <img className="w-3/4" src="./foo-festival-logo.svg" alt="" />
-          <p className="text-3xl mt-10">15 januar - 21 januar</p>
-          <p className="text-3xl mb-4">København</p>
-          <p className="max-w-prose text-xl hidden sm:block mb-3">Vi samler 120 kunstnere fra alle af musikkens verdenshjørner og samler dem i en uge med masser af fed stemning og energi</p>
-        </div>
-
+        <img className="w-3/4" src="./foo-festival-logo.svg" alt="" />
+        <p className="text-3xl mt-10">15. januar - 21. januar</p>
+        <p className="text-3xl mb-4">København</p>
+        <p className="max-w-prose text-xl hidden sm:block mb-3">
+          Vi samler 120 kunstnere fra alle af musikkens verdenshjørner og samler
+          dem i en uge med masser af fed stemning og energi
+        </p>
+      </div>
     </section>
   );
 }
