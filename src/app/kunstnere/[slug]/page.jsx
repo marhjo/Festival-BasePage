@@ -69,7 +69,7 @@ export default async function Kunstner({ params }) {
           </div> */}
           <div className="bandmedlemmer flex flex-wrap gap-x-10 mb-10">
             {data.members.map((member) => (
-              <p key={data.name}>{member}</p>
+              <p key={data.member}>{member}</p>
             ))}
           </div>
           <div className=" border w-2/4 mx-auto border-accent my-7"></div>
