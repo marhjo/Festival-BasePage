@@ -11,14 +11,14 @@ export default function Header() {
 
         <div>
         <Link
-          className="hover:scale-105 sm:hidden"
+          className="hover:scale-105 duration-150 sm:hidden"
           href="/"
           prefetch={false}
         >
           <LogoMobile/>
         </Link>
         <Link
-          className="hidden hover:scale-105 sm:block"
+          className="hidden hover:scale-105 duration-150 sm:block"
           href="/"
           prefetch={false}
         >
@@ -29,7 +29,7 @@ export default function Header() {
         </div>
         <div className="flex gap-5 sm:gap-11">
         <Link
-          className="grid place-items-center hover:scale-105"
+          className="grid place-items-center hover:scale-105 duration-150"
           href="/kunstnere"
           prefetch={false}
         >
@@ -37,7 +37,7 @@ export default function Header() {
           Kunstnere
         </Link>
         <Link
-          className="grid place-items-center hover:scale-105"
+          className="grid place-items-center hover:scale-105 duration-150"
           href="/program"
           prefetch={false}
         >
@@ -45,7 +45,7 @@ export default function Header() {
           Program
         </Link>
         <Link
-          className="grid place-items-center hover:scale-105"
+          className="grid place-items-center hover:scale-105 duration-150"
           href="/"
           prefetch={false}
         >

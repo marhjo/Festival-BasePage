@@ -4,8 +4,7 @@ import HeroBanner from "./components/HeroBanner.jsx";
 
 export const metadata = {
   title: "FooFest",
-  description:
-    "Velkommen til årets musikfestival: Foo Festival. Find informationer om programmet, kunstnere, og deltag i fællesskabet.",
+  description: "Velkommen til årets musikfestival: Foo Festival. Find informationer om programmet, kunstnere, og deltag i fællesskabet.",
 };
 
 export default function Home() {
@@ -13,22 +12,17 @@ export default function Home() {
     <main className="pt-[72px]">
       <HeroBanner />
       <section className="py-10 px-5 flex flex-col gap-16 sm:flex-row sm:gap-10 md:px-20">
-        <CircleCard image="ecofriendly" overskrift="Overskrift" text="Her skal der være en kort tekst som beskriver ovenstående" />
-        <CircleCard image="ecofriendly" overskrift="Overskrift" text="Her skal der være en kort tekst som beskriver ovenstående" />
-        <CircleCard image="ecofriendly" overskrift="Overskrift" text="Her skal der være en kort tekst som beskriver ovenstående" />
+        <CircleCard image="ecofriendly" overskrift="Vi er bæredygtige" text="Vi fokuserer på at tage bedre valg som hverken går på kompromis med din oplevelse eller planeten" />
+        <CircleCard image="ecofriendly" overskrift="Vi er inkluderende" text="Festivallen skal være et sted for alle. MANGLER EN SÆTNING " />
+        <CircleCard image="ecofriendly" overskrift="Vi samarbejder med lokale" text="Musikken er fra hele verden men alt hvad der kan købes på festivallen er fra lokale virksomheder." />
       </section>
       <div className="hidden md:block border w-3/4 mx-auto border-accent my-5"></div>
       <ImageAndText
         image="inclusive"
-        overskrift="Overskrift"
-        text="Dette skal være en mellem lang tekst som beskriver denne sektion. Den skal tiltrække læserens opmærksomhed"
+        overskrift="Upcoming og store artister"
+        text="Vi ved at musiksmag er en bred ting, så derfor har vi fundet de fedeste kunstnere indefor alt lige fra pop til rock og til hypertrash. Sammen med jer har vi sammensat det ultimative line-up hvor I kan finde nye artister såvel som store navne som Led Zeppelin, Pink floyd og mange flere."
       />
-      <ImageAndText
-        image="inclusive"
-        overskrift="Overskrift"
-        text="Dette skal være en mellem lang tekst som beskriver denne sektion. Den skal tiltrække læserens opmærksomhed"
-        layout="reversed"
-      />
+      <ImageAndText image="inclusive" overskrift="En uges fest" text="I år har vi valgt at tilbyde hele 3 forskellige scener med hver deres tema. SKRIV MERE TEKST" layout="reversed" />
     </main>
   );
 }
