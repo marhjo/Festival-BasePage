@@ -12,12 +12,11 @@ export default function ArtistCard({ data }) {
         src={
           data.logo.startsWith("https")
             ? data.logo
-            : `http://localhost:8080/logos/${data.logo}`
+            : `https://fe-fi-foofest.glitch.me/logos/${data.logo}`
         }
-        width="720"
-        height="480"
+        width="200"
+        height="100"
         className="h-full w-full object-cover brightness-[.65]"
-        sizes="300px"
         alt={data.name}
       />
 

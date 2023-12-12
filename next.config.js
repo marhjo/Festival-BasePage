@@ -9,7 +9,12 @@ const nextConfig = {
       },
       {
         protocol: "https",
-        hostname: "images.unsplash.com",
+        hostname: "fe-fi-foofest.glitch.me",
+        port: "",
+      },
+      {
+        protocol: "https",
+        hostname: "image.unsplash.com",
         port: "",
       },
       {

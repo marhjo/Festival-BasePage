@@ -5,8 +5,8 @@ export default function CircleCard(props) {
       <Image
         src={props.image}
         className=" w-36 md:w-44 rounded-full object-cover aspect-square"
-        width={300}
-        height={300}
+        width={100}
+        height={100}
         alt={props.image}
       />
       <h2 className="font-bold text-2xl">{props.overskrift}</h2>

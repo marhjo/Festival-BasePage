@@ -7,7 +7,7 @@ export const metadata = {
 };
 
 export default async function Kunstnere() {
-  const res = await fetch("http://localhost:8080/bands");
+  const res = await fetch("https://fe-fi-foofest.glitch.me/bands");
   const data = await res.json();
 
   // props: {logo name genre}
@@ -17,8 +17,10 @@ export default async function Kunstnere() {
         Kunstnere
       </h1>
       <p className="text-xl text-secondary max-w-prose mx-3 md:mx-12 lg:mx-44 mb-8">
-        Mellem lang tekst som beskriver det brede udvalg af kunstnere og som
-        skal ligge op til at læseren selv kan udforske udvalget af kategorier.
+        Vi har samlet hele vores line-up nedenunder som du kan udforske inden
+        festen for alvor går igang. Du kan nemt filtrere efter hvilke genre du
+        kan lide, og ser du en kunstner eller band du finder interesant, så kan
+        du bare trykke på dem for at læse mere.
       </p>
       <BandsWrapper data={data} />
     </main>

@@ -13,7 +13,7 @@ export default function ImageAndText(props) {
         src={props.image}
         alt={props.image}
         width={300}
-        height={200}
+        height={100}
       />
       <div className="py-5 md:py-0 px-5">
         <h2 className="mb-3 text-4xl md:text-6xl font-semibold">

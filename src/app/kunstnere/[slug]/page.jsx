@@ -5,7 +5,7 @@ import LocationLogo from "../../components/LocationLogo";
 
 export async function generateMetadata({ params }) {
   const { slug } = params;
-  const res = await fetch(`http://localhost:8080/bands/${slug}`);
+  const res = await fetch(`https://fe-fi-foofest.glitch.me/bands/${slug}`);
   const data = await res.json();
 
   return {
@@ -17,7 +17,7 @@ export async function generateMetadata({ params }) {
 }
 
 export async function generateStaticParams() {
-  const res = await fetch("http://localhost:8080/bands");
+  const res = await fetch("https://fe-fi-foofest.glitch.me/bands");
   const pages = await res.json();
 
   const paths = pages.map((page) => {
@@ -28,7 +28,7 @@ export async function generateStaticParams() {
 
 export default async function Kunstner({ params }) {
   const { slug } = params;
-  const res = await fetch(`http://localhost:8080/bands/${slug}`);
+  const res = await fetch(`https://fe-fi-foofest.glitch.me/bands/${slug}`);
   const data = await res.json();
 
   return (
@@ -42,19 +42,18 @@ export default async function Kunstner({ params }) {
           src={
             data.logo.startsWith("https")
               ? data.logo
-              : `http://localhost:8080/logos/${data.logo}`
+              : `https://fe-fi-foofest.glitch.me/logos/${data.logo}`
           }
-          width="720"
-          height="480"
+          width="200"
+          height="200"
           className="aspect-square object-cover w-full md:w-4/12"
-          sizes="500px"
           alt={data.name}
         />
 
         <div className="bandinfo px-5 pt-3 md:pt-0 pb-5">
           <h1 className="text-3xl font-bold">{data.name}</h1>
           <h2 className="text-xl font-semibold mb-5">{data.genre}</h2>
-          <div className="flex gap-10 mb-6">
+          {/* <div className="flex gap-10 mb-6">
             <p className="flex gap-2">
               <span>
                 <CalenderLogo />
@@ -67,7 +66,7 @@ export default async function Kunstner({ params }) {
               </span>
               Midgard
             </p>
-          </div>
+          </div> */}
           <div className="bandmedlemmer flex flex-wrap gap-x-10 mb-10">
             {data.members.map((member) => (
               <p key={data.name}>{member}</p>
