@@ -45,14 +45,6 @@ export default function Home() {
         link="program"
         linktekst="Explore the program"
       />
-      <ImageAndText
-        image="program.webp"
-        overskrift="A one week party"
-        text="This year, we present a diverse program over 7 days featuring three unique stages, each with its own theme, delivering an exciting festival experience for everyone."
-        layout="reversed"
-        link="program"
-        linktekst="Explore the program"
-      />
     </main>
   );
 }
