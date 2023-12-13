@@ -8,6 +8,7 @@ export default function CircleCard(props) {
         width={1080}
         height={1080}
         alt={props.image}
+        sizes="(max-width: 200px) 100vw, 200px"
       />
       <h2 className="font-bold text-2xl">{props.overskrift}</h2>
       <p className="text-lg">{props.text}</p>
