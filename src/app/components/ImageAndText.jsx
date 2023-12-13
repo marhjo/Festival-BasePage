@@ -14,6 +14,7 @@ export default function ImageAndText(props) {
         alt={props.image}
         width={1920}
         height={1080}
+        sizes="(max-width: 500px) 100vw, 500px"
       />
       <div className="py-5 md:py-0 px-5">
         <h2 className="mb-3 text-4xl md:text-5xl font-semibold">
