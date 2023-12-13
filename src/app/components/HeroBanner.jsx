@@ -1,5 +1,3 @@
-import LogoDesktop from "./LogoDesktop";
-
 export default function HeroBanner() {
   return (
     <section
