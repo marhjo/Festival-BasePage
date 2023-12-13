@@ -12,8 +12,8 @@ export default function ImageAndText(props) {
         className="w-full md:max-w-screen-sm  object-cover aspect-[5/3]"
         src={"/" + props.image}
         alt={props.image}
-        width={300}
-        height={100}
+        width={1920}
+        height={1080}
       />
       <div className="py-5 md:py-0 px-5">
         <h2 className="mb-3 text-4xl md:text-5xl font-semibold">
