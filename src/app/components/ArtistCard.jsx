@@ -18,6 +18,7 @@ export default function ArtistCard({ data }) {
         height="100"
         className="h-full w-full object-cover brightness-[.65]"
         alt={data.name}
+        sizes="(max-width: 300px) 100vw, 300px"
       />
 
       {/* <img
