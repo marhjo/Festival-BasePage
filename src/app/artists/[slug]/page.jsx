@@ -1,7 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import CalenderLogo from "../../components/CalenderLogo";
-import LocationLogo from "../../components/LocationLogo";
 
 export async function generateMetadata({ params }) {
   const { slug } = params;
@@ -33,7 +31,7 @@ export default async function Kunstner({ params }) {
 
   return (
     <main className="pt-[72px]">
-      <Link className="underline px-3 py-7" href="/kunstnere" prefetch={false}>
+      <Link className="underline px-3 py-7" href="/artists" prefetch={false}>
         Back to artists
       </Link>
 

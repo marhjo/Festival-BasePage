@@ -27,7 +27,7 @@ export default function Header() {
         <div className="flex gap-5 sm:gap-11">
           <Link
             className="grid place-items-center hover:scale-105 duration-150"
-            href="/kunstnere"
+            href="/artists"
             prefetch={false}
           >
             <MusikLogo />

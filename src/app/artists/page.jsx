@@ -10,7 +10,6 @@ export default async function Kunstnere() {
   const res = await fetch("https://fe-fi-foofest.glitch.me/bands");
   const data = await res.json();
 
-  // props: {logo name genre}
   return (
     <main>
       <h1 className=" font-heading text-5xl sm:text-7xl text-secondary mx-3 md:mx-12 lg:mx-32 mb-2 mt-28">

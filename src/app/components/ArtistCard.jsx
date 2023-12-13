@@ -1,10 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 export default function ArtistCard({ data }) {
-  // props: {logo, name, genre}
   return (
     <Link
-      href={`/kunstnere/${data.slug}`}
+      href={`/artists/${data.slug}`}
       prefetch={false}
       className="@container relative aspect-square overflow-hidden rounded-md hover:brightness-150"
     >
