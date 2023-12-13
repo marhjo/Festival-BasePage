@@ -5,8 +5,8 @@ export default function CircleCard(props) {
       <Image
         src={"/" + props.image + ".jpg"}
         className=" w-36 md:w-44 rounded-full object-cover aspect-square"
-        width={1080}
-        height={1080}
+        width={640}
+        height={640}
         alt={props.image}
         sizes="(max-width: 200px) 100vw, 200px"
       />
