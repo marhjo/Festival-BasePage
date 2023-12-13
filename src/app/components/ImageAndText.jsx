@@ -6,7 +6,7 @@ export default function ImageAndText(props) {
     <article
       className={`py-10 md:flex ${
         isReversed ? "flex-row-reverse" : ""
-      } justify-around items-center sm:gap-7 md:px-16`}
+      } justify-center items-center sm:gap-7 md:px-16`}
     >
       <Image
         className="w-full md:max-w-screen-sm  object-cover aspect-[5/3]"
