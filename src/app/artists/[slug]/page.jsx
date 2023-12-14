@@ -31,11 +31,12 @@ export default async function Kunstner({ params }) {
 
   return (
     <main className="pt-[72px]">
-      <Link className="underline px-3 py-7" href="/artists" prefetch={false}>
+      <Link className="underline px-3" href="/artists" prefetch={false}>
         Back to artists
       </Link>
 
       <div className="bandsection md:flex md:justify-center md:px-10 mx-auto py-5 md:py-10">
+        <div className="h-full w-full md:min-w-1/2 md:max-w-lg">
         <Image
           src={
             data.logo.startsWith("https")
@@ -44,9 +45,10 @@ export default async function Kunstner({ params }) {
           }
           width="200"
           height="200"
-          className="aspect-square object-cover w-full md:w-4/12"
+          className="aspect-square object-cover w-full"
           alt={data.name}
         />
+        <p className="px-5 md:px-0 mb-5 mt-1 font-extralight text-xs">{data.logoCredits}</p></div>
 
         <div className="bandinfo px-5 pt-3 md:pt-0 pb-5">
           <h1 className="text-3xl font-bold">{data.name}</h1>
