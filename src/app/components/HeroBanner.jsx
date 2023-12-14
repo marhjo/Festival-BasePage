@@ -1,3 +1,4 @@
+import Image from "next/image";
 export default function HeroBanner() {
   return (
     <section
@@ -8,7 +9,11 @@ export default function HeroBanner() {
       }}
     >
       <div className="bg-background bg-opacity-70 h-full pl-16 pr-5 pt-10">
-        <img className="h-3/6" src="./foo-festival-logo.svg" alt="Foo fest logo" />
+        <Image
+        src="./foo-festival-logo.svg"
+        alt="Foo Festival logo"
+        width={277}
+        height={488}></Image>
         <p className="text-3xl mt-10">15. January - 21. January</p>
         <p className="text-3xl mb-4">Copenhagen</p>
         <p className="max-w-prose text-xl hidden sm:block mb-3">
