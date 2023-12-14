@@ -3,7 +3,7 @@ import FacebookLogo from "./FacebookLogo";
 import InstagramLogo from "./InstagramLogo";
 export default function Footer() {
   return (
-    <footer className="bg-dark-blue px-4 py-3 pb-10 flex flex-col gap-10 sm:flex-row sm:justify-around sm:gap-20">
+    <footer className="bg-dark-blue px-4 text-lg py-3 pb-10 flex flex-col gap-10 sm:flex-row sm:justify-around sm:gap-20">
       <div className="flex flex-col gap-2">
         <h2 className="font-bold text-accent">Foo Festival</h2>
         <nav className="flex flex-col">
