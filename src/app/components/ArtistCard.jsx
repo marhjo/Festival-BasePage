@@ -20,16 +20,6 @@ export default function ArtistCard({ data }) {
         sizes="(max-width: 300px) 100vw, 300px"
       />
 
-      {/* <img
-        className="h-full w-full object-cover brightness-[.65] "
-        src={
-          data.logo.startsWith("https")
-            ? data.logo
-            : `http://localhost:8080/logos/${data.logo}`
-        }
-        alt={data.name}
-      /> */}
-
       <div className="absolute bottom-0 px-3 py-8 w-full">
         <h2 className=" @[15rem]:text-2xl font-bold text-lg">{data.name}</h2>
         <p className="@[15rem]:text-lg text-sm ">{data.genre}</p>
